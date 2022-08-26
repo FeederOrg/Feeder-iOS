@@ -33,6 +33,12 @@ struct WelcomeView: View {
                UIScrollView.appearance().isScrollEnabled = false
              })
     }
+
+    struct WelcomeView_Previews: PreviewProvider {
+        static var previews: some View {
+            WelcomeView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        }
+    }
 }
 
 struct HelloView: View {
@@ -45,6 +51,12 @@ struct HelloView: View {
                 displayedTab += 1
             }.buttonStyle(AppButton())
                 .padding()
+        }
+    }
+    
+    struct HelloView_Previews: PreviewProvider {
+        static var previews: some View {
+            HelloView(displayedTab: .constant(0))
         }
     }
 }
@@ -61,6 +73,11 @@ struct PairView: View {
                 .padding()
         }
     }
+    struct PairView_Previews: PreviewProvider {
+        static var previews: some View {
+            PairView(displayedTab: .constant(0))
+        }
+    }
 }
 
 struct WifiLoginView: View {
@@ -75,6 +92,12 @@ struct WifiLoginView: View {
                 .padding()
         }
     }
+
+    struct WifiLoginView_Previews: PreviewProvider {
+        static var previews: some View {
+            WifiLoginView(displayedTab: .constant(0))
+        }
+    }
 }
 
 struct LoadingView: View {
@@ -87,6 +110,12 @@ struct LoadingView: View {
                 displayedTab += 1
             }.buttonStyle(AppButton())
                 .padding()
+        }
+    }
+    
+    struct LoadingView_Previews: PreviewProvider {
+        static var previews: some View {
+            LoadingView(displayedTab: .constant(0))
         }
     }
 }
