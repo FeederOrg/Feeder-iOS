@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D87B60DB28B4663900432A8A /* Feeder_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60DA28B4663900432A8A /* Feeder_iOSApp.swift */; };
+		D826090A28B93DF200E144E9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826090928B93DF200E144E9 /* WelcomeView.swift */; };
+		D826090C28B9487200E144E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826090B28B9487200E144E9 /* Extensions.swift */; };
+		D87B60DB28B4663900432A8A /* FeederApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60DA28B4663900432A8A /* FeederApp.swift */; };
 		D87B60DD28B4663900432A8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60DC28B4663900432A8A /* ContentView.swift */; };
 		D87B60DF28B4663900432A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87B60DE28B4663900432A8A /* Assets.xcassets */; };
 		D87B60E228B4663900432A8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87B60E128B4663900432A8A /* Preview Assets.xcassets */; };
 		D87B60E428B4663900432A8A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60E328B4663900432A8A /* Persistence.swift */; };
 		D87B60E728B4663900432A8A /* Feeder_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D87B60E528B4663900432A8A /* Feeder_iOS.xcdatamodeld */; };
-		D87B60F128B4663A00432A8A /* Feeder_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60F028B4663A00432A8A /* Feeder_iOSTests.swift */; };
-		D87B60FB28B4663A00432A8A /* Feeder_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60FA28B4663A00432A8A /* Feeder_iOSUITests.swift */; };
-		D87B60FD28B4663A00432A8A /* Feeder_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60FC28B4663A00432A8A /* Feeder_iOSUITestsLaunchTests.swift */; };
+		D87B60F128B4663A00432A8A /* FeederTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60F028B4663A00432A8A /* FeederTests.swift */; };
+		D87B60FB28B4663A00432A8A /* FeederUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60FA28B4663A00432A8A /* FeederUITests.swift */; };
+		D87B60FD28B4663A00432A8A /* FeederUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60FC28B4663A00432A8A /* FeederUITestsLaunchTests.swift */; };
+		D883131B28B7F51C004F74A2 /* BluetoothController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883131A28B7F51C004F74A2 /* BluetoothController.swift */; };
+		D883131D28B7F9D0004F74A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883131C28B7F9D0004F74A2 /* Constants.swift */; };
+		D883131F28B7FEF3004F74A2 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883131E28B7FEF3004F74A2 /* ScanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +41,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D826090928B93DF200E144E9 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		D826090B28B9487200E144E9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D87B60D728B4663900432A8A /* Feeder-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feeder-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D87B60DA28B4663900432A8A /* Feeder_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeder_iOSApp.swift; sourceTree = "<group>"; };
+		D87B60DA28B4663900432A8A /* FeederApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeederApp.swift; sourceTree = "<group>"; };
 		D87B60DC28B4663900432A8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D87B60DE28B4663900432A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D87B60E128B4663900432A8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D87B60E328B4663900432A8A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D87B60E628B4663900432A8A /* Feeder_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Feeder_iOS.xcdatamodel; sourceTree = "<group>"; };
 		D87B60EC28B4663A00432A8A /* Feeder-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Feeder-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D87B60F028B4663A00432A8A /* Feeder_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeder_iOSTests.swift; sourceTree = "<group>"; };
+		D87B60F028B4663A00432A8A /* FeederTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeederTests.swift; sourceTree = "<group>"; };
 		D87B60F628B4663A00432A8A /* Feeder-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Feeder-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D87B60FA28B4663A00432A8A /* Feeder_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeder_iOSUITests.swift; sourceTree = "<group>"; };
-		D87B60FC28B4663A00432A8A /* Feeder_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeder_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D87B60FA28B4663A00432A8A /* FeederUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeederUITests.swift; sourceTree = "<group>"; };
+		D87B60FC28B4663A00432A8A /* FeederUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeederUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D883131A28B7F51C004F74A2 /* BluetoothController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothController.swift; sourceTree = "<group>"; };
+		D883131C28B7F9D0004F74A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D883131E28B7FEF3004F74A2 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		D8EE8AFC28B8083300ADE777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D826090828B93DAA00E144E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D87B60DC28B4663900432A8A /* ContentView.swift */,
+				D883131E28B7FEF3004F74A2 /* ScanView.swift */,
+				D826090928B93DF200E144E9 /* WelcomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D87B60CE28B4663900432A8A = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +119,16 @@
 		D87B60D928B4663900432A8A /* Feeder-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D87B60DA28B4663900432A8A /* Feeder_iOSApp.swift */,
-				D87B60DC28B4663900432A8A /* ContentView.swift */,
+				D826090828B93DAA00E144E9 /* Views */,
+				D8EE8AFC28B8083300ADE777 /* Info.plist */,
+				D883131928B7F505004F74A2 /* Communication */,
+				D87B60DA28B4663900432A8A /* FeederApp.swift */,
 				D87B60DE28B4663900432A8A /* Assets.xcassets */,
 				D87B60E328B4663900432A8A /* Persistence.swift */,
 				D87B60E528B4663900432A8A /* Feeder_iOS.xcdatamodeld */,
 				D87B60E028B4663900432A8A /* Preview Content */,
+				D883131C28B7F9D0004F74A2 /* Constants.swift */,
+				D826090B28B9487200E144E9 /* Extensions.swift */,
 			);
 			path = "Feeder-iOS";
 			sourceTree = "<group>";
@@ -119,7 +144,7 @@
 		D87B60EF28B4663A00432A8A /* Feeder-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				D87B60F028B4663A00432A8A /* Feeder_iOSTests.swift */,
+				D87B60F028B4663A00432A8A /* FeederTests.swift */,
 			);
 			path = "Feeder-iOSTests";
 			sourceTree = "<group>";
@@ -127,10 +152,18 @@
 		D87B60F928B4663A00432A8A /* Feeder-iOSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D87B60FA28B4663A00432A8A /* Feeder_iOSUITests.swift */,
-				D87B60FC28B4663A00432A8A /* Feeder_iOSUITestsLaunchTests.swift */,
+				D87B60FA28B4663A00432A8A /* FeederUITests.swift */,
+				D87B60FC28B4663A00432A8A /* FeederUITestsLaunchTests.swift */,
 			);
 			path = "Feeder-iOSUITests";
+			sourceTree = "<group>";
+		};
+		D883131928B7F505004F74A2 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				D883131A28B7F51C004F74A2 /* BluetoothController.swift */,
+			);
+			path = Communication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D87B610028B4663A00432A8A /* Build configuration list for PBXNativeTarget "Feeder-iOS" */;
 			buildPhases = (
+				D826090D28B94CFF00E144E9 /* Run SwiftLint */,
 				D87B60D328B4663900432A8A /* Sources */,
 				D87B60D428B4663900432A8A /* Frameworks */,
 				D87B60D528B4663900432A8A /* Resources */,
@@ -258,15 +292,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D826090D28B94CFF00E144E9 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D87B60D328B4663900432A8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D883131F28B7FEF3004F74A2 /* ScanView.swift in Sources */,
+				D826090C28B9487200E144E9 /* Extensions.swift in Sources */,
 				D87B60E728B4663900432A8A /* Feeder_iOS.xcdatamodeld in Sources */,
 				D87B60E428B4663900432A8A /* Persistence.swift in Sources */,
+				D826090A28B93DF200E144E9 /* WelcomeView.swift in Sources */,
 				D87B60DD28B4663900432A8A /* ContentView.swift in Sources */,
-				D87B60DB28B4663900432A8A /* Feeder_iOSApp.swift in Sources */,
+				D883131B28B7F51C004F74A2 /* BluetoothController.swift in Sources */,
+				D87B60DB28B4663900432A8A /* FeederApp.swift in Sources */,
+				D883131D28B7F9D0004F74A2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D87B60F128B4663A00432A8A /* Feeder_iOSTests.swift in Sources */,
+				D87B60F128B4663A00432A8A /* FeederTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D87B60FB28B4663A00432A8A /* Feeder_iOSUITests.swift in Sources */,
-				D87B60FD28B4663A00432A8A /* Feeder_iOSUITestsLaunchTests.swift in Sources */,
+				D87B60FB28B4663A00432A8A /* FeederUITests.swift in Sources */,
+				D87B60FD28B4663A00432A8A /* FeederUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +489,7 @@
 				DEVELOPMENT_TEAM = D44Y5BBJ48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Feeder-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +519,7 @@
 				DEVELOPMENT_TEAM = D44Y5BBJ48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Feeder-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
