@@ -13,7 +13,7 @@ protocol BluetoothProtocol {
     func value(data: Data)
 }
 
-final class BluetoothController: NSObject {
+open class BluetoothController: NSObject {
     static let shared = BluetoothController()
     var delegate: BluetoothProtocol?
 
@@ -24,7 +24,7 @@ final class BluetoothController: NSObject {
     private var manager: CBCentralManager?
     private var apCharacteristic: CBCharacteristic?
 
-    private override init() {
+    override init() {
         super.init()
         manager = CBCentralManager(delegate: self, queue: .none)
         manager?.delegate = self
@@ -72,7 +72,7 @@ final class BluetoothController: NSObject {
 }
 
 extension BluetoothController: CBCentralManagerDelegate {
-    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+    public func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch manager?.state {
         case .unknown: state = .unknown
         case .resetting: state = .resetting
@@ -84,8 +84,8 @@ extension BluetoothController: CBCentralManagerDelegate {
         }
     }
 
-    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral,
-                        advertisementData: [String: Any], rssi RSSI: NSNumber) {
+    public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral,
+                               advertisementData: [String: Any], rssi RSSI: NSNumber) {
         let uuid = String(describing: peripheral.identifier)
         let filtered = peripherals.filter { $0.uuid == uuid }
         if filtered.count == 0 {
@@ -96,16 +96,17 @@ extension BluetoothController: CBCentralManagerDelegate {
         }
     }
 
-    func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
+    public func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
         print(error!)
     }
 
-    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+    public func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral,
+                               error: Error?) {
         current = nil
         state = .disconnected
     }
 
-    func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+    public func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         current = peripheral
         state = .connected
         peripheral.delegate = self
@@ -114,14 +115,15 @@ extension BluetoothController: CBCentralManagerDelegate {
 }
 
 extension BluetoothController: CBPeripheralDelegate {
-    func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
+    public func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         guard let services = peripheral.services else { return }
         for service in services {
             peripheral.discoverCharacteristics(nil, for: service)
         }
     }
 
-    func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
+    public func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService,
+                           error: Error?) {
         guard let characteristics = service.characteristics else { return }
         for characteristic in characteristics
             where characteristic.uuid == CBUUID(string: Constants.CHARACTERISTICUUID) {
@@ -130,10 +132,12 @@ extension BluetoothController: CBPeripheralDelegate {
         }
     }
 
-    func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
+    public func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic,
+                           error: Error?) {
     }
-    func peripheral(_ peripheral: CBPeripheral, didWriteValueFor descriptor: CBDescriptor, error: Error?) {}
-    func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
+    public func peripheral(_ peripheral: CBPeripheral, didWriteValueFor descriptor: CBDescriptor, error: Error?) {}
+    public func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic,
+                           error: Error?) {
         guard let value = characteristic.value else { return }
         delegate?.value(data: value)
     }
