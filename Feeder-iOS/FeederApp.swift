@@ -6,24 +6,25 @@
 //
 
 import SwiftUI
-import CoreData
+import RealmSwift
 
 @main
-struct FeederApp: App {
-    let persistenceController = PersistenceController.shared
-    @FetchRequest(entity: Settings.entity(), sortDescriptors: [])
-    private var settings: FetchedResults<Settings>
+struct FeederApp: SwiftUI.App {
+    static let realm = try! Realm()
+    private var isFirstLaunch: Bool = true
+
+    init() {
+        if FeederApp.realm.object(ofType: Settings.self, forPrimaryKey: Constants.SETTINGSKEY) != nil {
+            isFirstLaunch = false
+        }
+    }
 
     var body: some Scene {
         WindowGroup {
-            if settings.isEmpty {
-                // If the settings are *not* created, user has *not* seen the welcome view
+            if isFirstLaunch {
                 WelcomeView()
-                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
             } else {
-                // TODO: Show the home screen
-                WelcomeView()
-                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                WelcomeView() // TODO: HomeView()
             }
         }
     }

@@ -10,17 +10,22 @@
 		D826090A28B93DF200E144E9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826090928B93DF200E144E9 /* WelcomeView.swift */; };
 		D826090C28B9487200E144E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826090B28B9487200E144E9 /* Extensions.swift */; };
 		D87B60DB28B4663900432A8A /* FeederApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60DA28B4663900432A8A /* FeederApp.swift */; };
-		D87B60DD28B4663900432A8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60DC28B4663900432A8A /* ContentView.swift */; };
 		D87B60DF28B4663900432A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87B60DE28B4663900432A8A /* Assets.xcassets */; };
 		D87B60E228B4663900432A8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87B60E128B4663900432A8A /* Preview Assets.xcassets */; };
-		D87B60E428B4663900432A8A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60E328B4663900432A8A /* Persistence.swift */; };
-		D87B60E728B4663900432A8A /* Feeder_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D87B60E528B4663900432A8A /* Feeder_iOS.xcdatamodeld */; };
 		D87B60F128B4663A00432A8A /* FeederTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60F028B4663A00432A8A /* FeederTests.swift */; };
 		D87B60FB28B4663A00432A8A /* FeederUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60FA28B4663A00432A8A /* FeederUITests.swift */; };
 		D87B60FD28B4663A00432A8A /* FeederUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B60FC28B4663A00432A8A /* FeederUITestsLaunchTests.swift */; };
 		D883131B28B7F51C004F74A2 /* BluetoothController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883131A28B7F51C004F74A2 /* BluetoothController.swift */; };
 		D883131D28B7F9D0004F74A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883131C28B7F9D0004F74A2 /* Constants.swift */; };
-		D883131F28B7FEF3004F74A2 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883131E28B7FEF3004F74A2 /* ScanView.swift */; };
+		D8B41FF828C6B9EF00DAA136 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B41FF728C6B9EF00DAA136 /* WelcomeViewModel.swift */; };
+		D8B41FFB28C6BA1100DAA136 /* WelcomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B41FFA28C6BA1100DAA136 /* WelcomeTests.swift */; };
+		D8B41FFE28C6BC9F00DAA136 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D8B41FFD28C6BC9F00DAA136 /* Realm */; };
+		D8B4200028C6BC9F00DAA136 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D8B41FFF28C6BC9F00DAA136 /* RealmSwift */; settings = {ATTRIBUTES = (Required, ); }; };
+		D8B4200328C6C0A300DAA136 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B4200228C6C0A300DAA136 /* Settings.swift */; };
+		D8B4200628C6C13500DAA136 /* Feeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B4200528C6C13500DAA136 /* Feeder.swift */; };
+		D8B4200828C6C55500DAA136 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B4200728C6C55500DAA136 /* Pet.swift */; };
+		D8FA046A28B9A4420084F24B /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8FA046928B9A4420084F24B /* Nunito-Regular.ttf */; };
+		D8FA046C28B9A58E0084F24B /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8FA046B28B9A58E0084F24B /* Nunito-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +50,8 @@
 		D826090B28B9487200E144E9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D87B60D728B4663900432A8A /* Feeder-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feeder-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87B60DA28B4663900432A8A /* FeederApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeederApp.swift; sourceTree = "<group>"; };
-		D87B60DC28B4663900432A8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D87B60DE28B4663900432A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D87B60E128B4663900432A8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D87B60E328B4663900432A8A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		D87B60E628B4663900432A8A /* Feeder_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Feeder_iOS.xcdatamodel; sourceTree = "<group>"; };
 		D87B60EC28B4663A00432A8A /* Feeder-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Feeder-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87B60F028B4663A00432A8A /* FeederTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeederTests.swift; sourceTree = "<group>"; };
 		D87B60F628B4663A00432A8A /* Feeder-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Feeder-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,8 +59,15 @@
 		D87B60FC28B4663A00432A8A /* FeederUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeederUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D883131A28B7F51C004F74A2 /* BluetoothController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothController.swift; sourceTree = "<group>"; };
 		D883131C28B7F9D0004F74A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		D883131E28B7FEF3004F74A2 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		D8B41FF728C6B9EF00DAA136 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		D8B41FFA28C6BA1100DAA136 /* WelcomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTests.swift; sourceTree = "<group>"; };
+		D8B4200228C6C0A300DAA136 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D8B4200528C6C13500DAA136 /* Feeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeder.swift; sourceTree = "<group>"; };
+		D8B4200728C6C55500DAA136 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		D8EE8AFC28B8083300ADE777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D8FA046628B96E150084F24B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D8FA046928B9A4420084F24B /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		D8FA046B28B9A58E0084F24B /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B4200028C6BC9F00DAA136 /* RealmSwift in Frameworks */,
+				D8B41FFE28C6BC9F00DAA136 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +100,6 @@
 		D826090828B93DAA00E144E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D87B60DC28B4663900432A8A /* ContentView.swift */,
-				D883131E28B7FEF3004F74A2 /* ScanView.swift */,
 				D826090928B93DF200E144E9 /* WelcomeView.swift */,
 			);
 			path = Views;
@@ -103,6 +112,7 @@
 				D87B60EF28B4663A00432A8A /* Feeder-iOSTests */,
 				D87B60F928B4663A00432A8A /* Feeder-iOSUITests */,
 				D87B60D828B4663900432A8A /* Products */,
+				D8B4200D28C6EDE800DAA136 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,16 +129,18 @@
 		D87B60D928B4663900432A8A /* Feeder-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D826090828B93DAA00E144E9 /* Views */,
-				D8EE8AFC28B8083300ADE777 /* Info.plist */,
+				D8B4200428C6C0C200DAA136 /* Persistence */,
 				D883131928B7F505004F74A2 /* Communication */,
+				D8B4200128C6C04B00DAA136 /* Models */,
+				D826090828B93DAA00E144E9 /* Views */,
+				D8B41FF628C6B9C300DAA136 /* ViewModels */,
+				D8FA046528B96DE60084F24B /* Fonts */,
 				D87B60DA28B4663900432A8A /* FeederApp.swift */,
-				D87B60DE28B4663900432A8A /* Assets.xcassets */,
-				D87B60E328B4663900432A8A /* Persistence.swift */,
-				D87B60E528B4663900432A8A /* Feeder_iOS.xcdatamodeld */,
-				D87B60E028B4663900432A8A /* Preview Content */,
 				D883131C28B7F9D0004F74A2 /* Constants.swift */,
 				D826090B28B9487200E144E9 /* Extensions.swift */,
+				D8EE8AFC28B8083300ADE777 /* Info.plist */,
+				D87B60DE28B4663900432A8A /* Assets.xcassets */,
+				D87B60E028B4663900432A8A /* Preview Content */,
 			);
 			path = "Feeder-iOS";
 			sourceTree = "<group>";
@@ -145,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				D87B60F028B4663A00432A8A /* FeederTests.swift */,
+				D8B41FFA28C6BA1100DAA136 /* WelcomeTests.swift */,
 			);
 			path = "Feeder-iOSTests";
 			sourceTree = "<group>";
@@ -166,6 +179,48 @@
 			path = Communication;
 			sourceTree = "<group>";
 		};
+		D8B41FF628C6B9C300DAA136 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D8B41FF728C6B9EF00DAA136 /* WelcomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D8B4200128C6C04B00DAA136 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8B4200428C6C0C200DAA136 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				D8B4200228C6C0A300DAA136 /* Settings.swift */,
+				D8B4200528C6C13500DAA136 /* Feeder.swift */,
+				D8B4200728C6C55500DAA136 /* Pet.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		D8B4200D28C6EDE800DAA136 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8FA046528B96DE60084F24B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D8FA046928B9A4420084F24B /* Nunito-Regular.ttf */,
+				D8FA046B28B9A58E0084F24B /* Nunito-Black.ttf */,
+				D8FA046628B96E150084F24B /* README.md */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,7 +228,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D87B610028B4663A00432A8A /* Build configuration list for PBXNativeTarget "Feeder-iOS" */;
 			buildPhases = (
-				D826090D28B94CFF00E144E9 /* Run SwiftLint */,
 				D87B60D328B4663900432A8A /* Sources */,
 				D87B60D428B4663900432A8A /* Frameworks */,
 				D87B60D528B4663900432A8A /* Resources */,
@@ -183,6 +237,10 @@
 			dependencies = (
 			);
 			name = "Feeder-iOS";
+			packageProductDependencies = (
+				D8B41FFD28C6BC9F00DAA136 /* Realm */,
+				D8B41FFF28C6BC9F00DAA136 /* RealmSwift */,
+			);
 			productName = "Feeder-iOS";
 			productReference = D87B60D728B4663900432A8A /* Feeder-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +259,8 @@
 				D87B60EE28B4663A00432A8A /* PBXTargetDependency */,
 			);
 			name = "Feeder-iOSTests";
+			packageProductDependencies = (
+			);
 			productName = "Feeder-iOSTests";
 			productReference = D87B60EC28B4663A00432A8A /* Feeder-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -255,6 +315,9 @@
 				Base,
 			);
 			mainGroup = D87B60CE28B4663900432A8A;
+			packageReferences = (
+				D8B41FFC28C6BC9F00DAA136 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = D87B60D828B4663900432A8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -271,8 +334,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8FA046A28B9A4420084F24B /* Nunito-Regular.ttf in Resources */,
 				D87B60E228B4663900432A8A /* Preview Assets.xcassets in Resources */,
 				D87B60DF28B4663900432A8A /* Assets.xcassets in Resources */,
+				D8FA046C28B9A58E0084F24B /* Nunito-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,39 +357,17 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D826090D28B94CFF00E144E9 /* Run SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/zsh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		D87B60D328B4663900432A8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D883131F28B7FEF3004F74A2 /* ScanView.swift in Sources */,
 				D826090C28B9487200E144E9 /* Extensions.swift in Sources */,
-				D87B60E728B4663900432A8A /* Feeder_iOS.xcdatamodeld in Sources */,
-				D87B60E428B4663900432A8A /* Persistence.swift in Sources */,
+				D8B41FF828C6B9EF00DAA136 /* WelcomeViewModel.swift in Sources */,
+				D8B4200628C6C13500DAA136 /* Feeder.swift in Sources */,
+				D8B4200828C6C55500DAA136 /* Pet.swift in Sources */,
+				D8B4200328C6C0A300DAA136 /* Settings.swift in Sources */,
 				D826090A28B93DF200E144E9 /* WelcomeView.swift in Sources */,
-				D87B60DD28B4663900432A8A /* ContentView.swift in Sources */,
 				D883131B28B7F51C004F74A2 /* BluetoothController.swift in Sources */,
 				D87B60DB28B4663900432A8A /* FeederApp.swift in Sources */,
 				D883131D28B7F9D0004F74A2 /* Constants.swift in Sources */,
@@ -335,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B41FFB28C6BA1100DAA136 /* WelcomeTests.swift in Sources */,
 				D87B60F128B4663A00432A8A /* FeederTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +534,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Feeder-iOS/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Feeder uses bluetooth to pair with your automatic cat feeder!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -520,6 +565,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Feeder-iOS/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Feeder uses bluetooth to pair with your automatic cat feeder!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -549,6 +595,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
+				"OTHER_SWIFT_FLAGS[sdk=iphoneos*]" = "-Xcc -fmodule-map-file=$(PROJECT_TEMP_ROOT)/GeneratedModuleMaps-iphoneos/RealmSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.jdiggity.Feeder-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -569,6 +616,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
+				"OTHER_SWIFT_FLAGS[sdk=iphoneos*]" = "-Xcc -fmodule-map-file=$(PROJECT_TEMP_ROOT)/GeneratedModuleMaps-iphoneos/RealmSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.jdiggity.Feeder-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -655,18 +703,29 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCVersionGroup section */
-		D87B60E528B4663900432A8A /* Feeder_iOS.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D87B60E628B4663900432A8A /* Feeder_iOS.xcdatamodel */,
-			);
-			currentVersion = D87B60E628B4663900432A8A /* Feeder_iOS.xcdatamodel */;
-			path = Feeder_iOS.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+/* Begin XCRemoteSwiftPackageReference section */
+		D8B41FFC28C6BC9F00DAA136 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.7;
+			};
 		};
-/* End XCVersionGroup section */
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8B41FFD28C6BC9F00DAA136 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8B41FFC28C6BC9F00DAA136 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		D8B41FFF28C6BC9F00DAA136 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8B41FFC28C6BC9F00DAA136 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D87B60CF28B4663900432A8A /* Project object */;
 }
