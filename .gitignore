@@ -76,3 +76,8 @@ Dependencies/
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Custom Fonts
+#
+# I'm not sure of the legality but just in case let's not track them
+*.ttf
