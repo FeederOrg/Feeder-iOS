@@ -293,8 +293,6 @@ struct LoadingView: View {
                 }
                 task.resume()
                  */
-            } catch {
-                print("Couldn't fetch settings")
             }
         }
     }
