@@ -6,5 +6,5 @@ so I decided to just leave them out. You'll need to grab these fonts:
 
 - [Nunito](https://fonts.google.com/specimen/Nunito)
 
-Then, place the downloaded `.ttf` files in this directory. It's easiest to simply drag
-the `.ttf` file into `Fonts` directly within XCode. Make sure to add it to the `Feeder-iOS` target.
+Then, place `Nunito-Black.ttf` and `Nunito-Regular.ttf` in this directory. It's easiest to simply drag
+the `.ttf` file into `Fonts` group directly within XCode. Make sure to add it to the `Feeder-iOS` target.
