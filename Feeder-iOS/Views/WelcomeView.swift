@@ -46,7 +46,7 @@ struct HelloView: View {
             Text("Welcome")
                 .padding(.top, 100)
                 .font(.custom("Nunito", size: 40))
-                .fontWeight(.black)
+                //.fontWeight(.black)
                 .padding(.bottom, 50)
             Image(systemName: "pawprint.circle.fill")
                 .resizable()
@@ -103,7 +103,7 @@ struct PairView: View {
             Text("Pair with Feeder")
                 .padding(.top, 30)
                 .font(.custom("Nunito", size: 40))
-                .fontWeight(.black)
+                //.fontWeight(.black)
             Text("""
             Select your feeder device from the list below. Check out [the tutorial](https://jdiggity.me/feeder-tutorial) for help with pairing!
             """)
@@ -154,9 +154,6 @@ struct PairView: View {
             //bluetooth.disconnect()
         }) {
             WifiLoginView(bluetooth: bluetooth, presented: $presented, displayedTab: $displayedTab)
-                .if(!.iOS16) { view in
-                    view.presentationDetents([.height(500)])
-                }
         }
     }
 }
