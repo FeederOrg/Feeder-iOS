@@ -11,11 +11,13 @@
 
 # Get fonts from google <3
 nunito_link=https://fonts.google.com/download?family=Nunito
-mkdir Feeder-iOS
-mkdir Feeder-iOS/Fonts
-mkdir Feeder-iOS/Fonts/out
 
-cd Feeder-iOS/Fonts/out && curl -X GET $nunito_link --output nunito.zip
+echo "$CI_WORKSPACE"
+echo "$PWD"
+
+cd $CI_WORKSPACE/Feeder-iOS/Fonts
+mkdir out && cd out
+curl -X GET $nunito_link --output nunito.zip
 unzip nunito.zip
 mv static/Nunito-Regular.ttf ../
 mv static/Nunito-Black.ttf ../
