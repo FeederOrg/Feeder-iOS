@@ -48,6 +48,7 @@
 /* Begin PBXFileReference section */
 		D826090928B93DF200E144E9 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D826090B28B9487200E144E9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D85A420428C902EE0082ADA7 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		D87B60D728B4663900432A8A /* Feeder-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feeder-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87B60DA28B4663900432A8A /* FeederApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeederApp.swift; sourceTree = "<group>"; };
 		D87B60DE28B4663900432A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,9 +106,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D85A420328C902C60082ADA7 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D85A420428C902EE0082ADA7 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 		D87B60CE28B4663900432A8A = {
 			isa = PBXGroup;
 			children = (
+				D85A420328C902C60082ADA7 /* ci_scripts */,
 				D87B60D928B4663900432A8A /* Feeder-iOS */,
 				D87B60EF28B4663A00432A8A /* Feeder-iOSTests */,
 				D87B60F928B4663A00432A8A /* Feeder-iOSUITests */,
