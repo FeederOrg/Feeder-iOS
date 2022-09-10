@@ -13,9 +13,8 @@
 nunito_link=https://fonts.google.com/download?family=Nunito
 
 
+echo "Derived Data: "
 echo "$CI_DERIVED_DATA_PATH"
-echo "$CI_WORKSPACE"
-echo "$PWD"
 
 cd $CI_WORKSPACE/Feeder-iOS/Fonts
 mkdir out && cd out
