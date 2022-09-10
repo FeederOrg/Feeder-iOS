@@ -12,8 +12,8 @@
 # Get fonts from google <3
 nunito_link=https://fonts.google.com/download?family=Nunito
 
-echo "Derived Data: "
-echo "$CI_DERIVED_DATA_PATH"
+cd $CI_DERIVED_DATA_PATH/Feeder-iOS*/Build/Intermediates.noindex/GeneratedModuleMaps-iphoneos && MODULE_MAP=$PWD/RealmSwift.modulemap
+echo "$MODULE_MAP"
 
 cd $CI_WORKSPACE/Feeder-iOS/Fonts
 mkdir out && cd out
