@@ -12,7 +12,6 @@
 # Get fonts from google <3
 nunito_link=https://fonts.google.com/download?family=Nunito
 
-
 echo "Derived Data: "
 echo "$CI_DERIVED_DATA_PATH"
 
