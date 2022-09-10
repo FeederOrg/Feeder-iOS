@@ -614,7 +614,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				"OTHER_SWIFT_FLAGS[sdk=*]" = "-Xcc -fmodule-map-file=$(PROJECT_TEMP_ROOT)/GeneratedModuleMaps-iphoneos/RealmSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.jdiggity.Feeder-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -636,7 +635,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				"OTHER_SWIFT_FLAGS[sdk=*]" = "-Xcc -fmodule-map-file=$(PROJECT_TEMP_ROOT)/GeneratedModuleMaps-iphoneos/RealmSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.jdiggity.Feeder-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
