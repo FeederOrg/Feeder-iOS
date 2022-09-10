@@ -66,6 +66,7 @@
 		D8B4200228C6C0A300DAA136 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		D8B4200528C6C13500DAA136 /* Feeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeder.swift; sourceTree = "<group>"; };
 		D8B4200728C6C55500DAA136 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		D8C9E11628CD5521004500A6 /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
 		D8EE8AFC28B8083300ADE777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D8FA046628B96E150084F24B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D8FA046928B9A4420084F24B /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				D85A420428C902EE0082ADA7 /* ci_post_clone.sh */,
+				D8C9E11628CD5521004500A6 /* ci_post_xcodebuild.sh */,
 			);
 			path = ci_scripts;
 			sourceTree = "<group>";
