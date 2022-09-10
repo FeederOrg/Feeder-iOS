@@ -12,8 +12,8 @@
 # Get fonts from google <3
 nunito_link=https://fonts.google.com/download?family=Nunito
 
-echo $CI_DERIVED_DATA_PATH
 
+echo "$CI_DERIVED_DATA_PATH"
 echo "$CI_WORKSPACE"
 echo "$PWD"
 
