@@ -9,7 +9,7 @@
 # Brute force
 
 echo "========Recursive root ls========="
-echo $(ls -R /)
+# echo $(ls -R /) # This is taking way too long, maybe we don't need it 
 echo "=================================="
 
 echo "======Recursive volumes ls========"
